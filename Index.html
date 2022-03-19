@@ -10,8 +10,9 @@
     <title>SAPHIS</title>
 </head>
 <body>
+   
  <header class="header" id="inicio">
-     <img src="/img/menu.svg" alt="" class="Menu">
+     <img src="img/menu.svg" alt="" class="Menu">
     
     <nav class="menu-navegacion">
         <a href="#inicio">Inicio</a>
@@ -21,19 +22,26 @@
         <a href="#contacto">Contacto</a>
         
     </nav>
+ <li>
+        <button class="swithDark active" id="swith">
+            <span><i class='bx bx-sun'></i></span>
+            <span><i class='bx bx-moon'></i></span>
+    </li>
     <div class="contenedor head">
         <h1 class="titulo">Bienvenidos a Saphis</h1>
         <p class="copy">Somos un emprendimiento dedicado a catapultar tu empresa más allá de tu imaginación</p>
     </div>
+    
 </header>
 <main>
+    
     <section class="services contenedor" id= "Servicios">
     <h2 class="subtitulo"><a href="servicios.html" target="_blank">NUESTROS SERVICIOS</a></h2>
     <div class="contenedor-servicio"></div>
         <img src="" alt="">
         <div class="checklist-servicio">
             <div class="service">
-                <img src="/Img/Report analysis _Isometric.png" alt=""height="500" width="500" >
+                <img src="Img/Report analysis _Isometric.png" alt=""height="200" width="200" >
                 <h3 class="n-service"><span class="number">1</span>Análisis de Sistemas</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
@@ -49,30 +57,43 @@
         </div>
 
     </section>
-    <secton class="proyectos" id="Proyectos">
+    <section class="proyectos" id="Proyectos">
         <div class="contenedor">
             <h2 class="subtitulo">Proyectos</h2>
-            <div class="contenedor-galeria">
+            <div class="contenedor-proyectos">
+                <img src="img/Analisis de sistemas.jpeg" alt="" class="imagen-proyectos">
+                <img src="img/Analisis de sistemas.jpeg" alt="" class= "imagen-proyectos">
+                <img src="img/Analisis de sistemas.jpeg" alt="" class= "imagen-proyectos"> 
+                <img src="img/Analisis de sistemas.jpeg" alt=""class= "imagen-proyectos">
+                <img src="img/Analisis de sistemas.jpeg" alt=""class= "imagen-proyectos">
+                <img src="img/Analisis de sistemas.jpeg" alt=""class= "imagen-proyectos">
+                
             </div>
-        </div>  
+        </div> 
+    </section> 
+    <section class="imagen-light">
+        <img src="img/bx-x.svg" alt="" class="close">
+        <img src="" alt="" class="agregar-imagen">
+    </section>  
         <section class="contenedor" id="expertos">
             <h2 class="expertos">Expertos en:</h2>
             <section class="experts">
                 <div class="cont-expet">
-                    <img src="/Img/Web development .svg" alt="">
+                    <img src="Img/Web development .svg" alt="">
                     <h3 class="n-expert">Desarrollo Web</h3> 
                 </div>
                 <div class="cont-expet">
-                    <img src="/Img/Search engine _Two Color.jpeg" alt="" height="306" width="406"  >
+                    <img src="Img/Search engine _Two Color.jpeg" alt="" height="306" width="406"  >
                     <h3 class="n-expert">SEO</h3> 
                 </div>
                 <div class="cont-expet">
-                    <img src="/Img/Cleaning PC_Isometric.svg"alt="">
+                    <img src="Img/Cleaning PC_Isometric.svg"alt="">
                     <h3 class="n-expert">Servicio Técnico</h3> 
                 </div>
             </section>
         </section>
     </section>
+    
 </main>
 <footer id="contacto">
         <div class="footer-content">
@@ -88,8 +109,10 @@
               
             </div>
         </div>
+       
     </footer>
     <script src="Js/menu.js"></script>
     <script src="Js/lightbox.js"></script>
+    <script src="Js/DarkMode.js"></script>
 </body>
 </html>

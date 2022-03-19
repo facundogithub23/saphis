@@ -8,7 +8,15 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #000;
 }
+
+body.dark {
+    background: #222;
+    color: #fff;
+}
+
 .contenedor{
     max-width: 1200px;
     overflow: hidden;
@@ -67,6 +75,52 @@ body{
     color: #fff;
     text-decoration: none;
 }
+.swithDark {
+    background-color: #0c10e400;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/***********************DARK******************/
+
+.swithDark span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff;
+    background: none;
+
+}
+.swithDark::after {
+    display: block;
+    background: #0c10e4; 
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 50%;
+    transition: all .5 ease;
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, .5);
+    content: "";
+}
+.swithDark.active {
+    background: rgba(0, 0, 0, 0);
+}
+.swithDark.active::after {
+    left: unset;
+    right: 0;
+}
+
+/***********************DARK******************/
 
 .titulo{
     font-size: 60px;
@@ -121,21 +175,56 @@ body{
     line-height: 30px;
     margin-right: 10px;
 }
-.proyectos{
-    background: #1e07eb;
+.proyectos {
+    background: rgba(255, 255, 255, 0);
 }
-.contenedor-galeria{
+
+.contenedor-proyectos{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
 }
-.img-proyectos{
-    object-fit: cover;
+.imagen-proyectos{
+   
      width: 30%;
      display: block;
      margin-bottom: 15px;
-     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+     box-shadow: 0 0 6px rgba(0, 0, 0,.5);
      cursor: pointer;
+}
+.imagen-light {
+    position: fixed;
+    background: rgba(0, 0, 0,.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+.show {
+    transform: translate(0);
+}
+.agregar-imagen {
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+.showImage {
+    transform: scale(1);
+
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
 }
 .experts{
     display:flex;
